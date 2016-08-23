@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="eu.eitdigital.yuefeng.hug.PersonActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/photo"
+        android:src="@mipmap/photo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/locationImage"
+        android:src="@mipmap/location"
+        android:layout_below="@+id/photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="THINGS, Drottning Kristinas väg 53"
+        android:id="@+id/locationText"
+        android:layout_below="@+id/photo"
+        android:layout_toRightOf="@+id/locationImage"
+        android:layout_alignBottom="@+id/locationImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/timeImage"
+        android:layout_below="@+id/locationImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/timeText"
+        android:layout_alignTop="@+id/timeImage"
+        android:layout_alignLeft="@+id/locationText"
+        android:layout_alignStart="@+id/locationText"
+        android:layout_alignBottom="@+id/timeImage"
+        android:layout_alignRight="@+id/locationText"
+        android:layout_alignEnd="@+id/locationText"
+        android:textStyle="bold|italic"
+        android:textSize="18dp"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/facebook"
+        android:src="@mipmap/facebook"
+        android:layout_below="@+id/timeImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/google"
+        android:layout_below="@+id/timeText"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/google" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/linkedin"
+        android:src="@mipmap/linkedin"
+        android:layout_below="@+id/timeText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/tumblr"
+        android:layout_below="@+id/facebook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/tumblr" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/qq"
+        android:layout_below="@+id/facebook"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/qq" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/wechat"
+        android:layout_below="@+id/google"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/wechat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yi HE"
+        android:id="@+id/Name"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp" />
+
+</RelativeLayout>
